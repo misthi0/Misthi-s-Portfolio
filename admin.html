@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin — Portfolio Editor</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="logo">misthi<span class="dot">.</span>dev / <span class="muted">admin</span></div>
+    <div class="nav-links">
+      <a href="index.html">← back to site</a>
+    </div>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+      <svg id="themeIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg>
+    </button>
+  </div>
+</nav>
+
+<div class="container" style="padding-top:48px;padding-bottom:80px;">
+
+  <!-- LOGIN GATE -->
+  <div id="loginGate" class="admin-card" style="max-width:420px;margin:60px auto;">
+    <h2 class="section-title" style="margin-bottom:20px;">Admin access</h2>
+    <input type="text" id="userInput" class="admin-input" placeholder="Login ID" autofocus autocomplete="off">
+    <input type="password" id="pwInput" class="admin-input" placeholder="Password" style="margin-top:10px;">
+    <button class="btn btn-primary" id="loginBtn" style="margin-top:14px;width:100%;">Unlock editor</button>
+    <div id="loginError" style="color:var(--danger);font-size:.85rem;margin-top:10px;"></div>
+  </div>
+
+  <!-- EDITOR -->
+  <div id="editorWrap" style="display:none;">
+    <div class="admin-toolbar">
+      <div>
+        <h2 class="section-title">Portfolio editor</h2>
+        <p class="muted" style="font-size:.88rem;max-width:60ch;margin-top:6px;">
+          Edits save instantly to <strong style="color:var(--accent)">this browser</strong> and preview live on the site.
+          Click <strong>Publish (download content.json)</strong> and replace the file wherever the portfolio is hosted to make changes visible to <strong>everyone</strong>.
+        </p>
+      </div>
+      <div class="admin-toolbar-actions">
+        <button class="btn btn-primary" id="saveBtn">💾 Save changes</button>
+        <button class="btn" id="previewBtn">Open live preview ↗</button>
+        <button class="btn" id="importBtn">Import JSON</button>
+        <input type="file" id="importFile" accept="application/json" style="display:none;">
+        <button class="btn" id="resetBtn">Reset to published</button>
+        <button class="btn" id="publishBtn">⬇ Publish (download content.json)</button>
+      </div>
+    </div>
+    <div id="saveStatus" class="save-status"></div>
+    <div id="lastSavedLabel" class="muted" style="font-size:.75rem;margin-top:4px;"></div>
+
+    <div class="admin-card" style="margin-top:24px;">
+      <div style="display:flex;align-items:center;justify-content:space-between;cursor:pointer;flex-wrap:wrap;gap:10px;" id="previewToggle">
+        <h3 style="font-family:var(--font-display);">Live preview</h3>
+        <div style="display:flex;gap:8px;">
+          <button class="btn" id="previewWidthBtn" type="button" style="display:none;">📱 Mobile width</button>
+          <button class="btn" id="previewToggleBtn" type="button">Show preview ▾</button>
+        </div>
+      </div>
+      <div id="previewFrameWrap" style="display:none;margin-top:16px;">
+        <div id="previewFrameOuter" style="width:100%;transition:max-width .25s ease;">
+          <iframe id="previewFrame" src="index.html" style="width:100%;height:600px;border:1px solid var(--border);border-radius:10px;background:var(--bg);transition:width .25s ease;"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="admin-tabs" id="adminTabs"></div>
+    <div id="adminPanels"></div>
+
+    <div class="admin-card" style="margin-top:32px;">
+      <h3 style="font-family:var(--font-display);margin-bottom:10px;">Change admin password</h3>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;">
+        <input type="text" id="newUser" class="admin-input" placeholder="New login ID" style="max-width:200px;" autocomplete="off">
+        <input type="password" id="newPw" class="admin-input" placeholder="New password" style="max-width:260px;">
+        <button class="btn" id="changePwBtn">Update credentials</button>
+      </div>
+      <p class="muted" style="font-size:.78rem;margin-top:10px;">Note: this is a simple client-side gate stored in this browser only — it stops casual visitors, not a determined attacker. For real security, host this admin page privately or add a real backend.</p>
+    </div>
+  </div>
+
+</div>
+
+<script src="admin.js"></script>
+</body>
+</html>

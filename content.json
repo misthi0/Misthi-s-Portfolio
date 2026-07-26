@@ -1,0 +1,274 @@
+{
+  "meta": {
+    "name": "Misthi Maheshwari",
+    "tagline": "AI/ML Engineer & Full-Stack Builder",
+    "subtitle": "Building deep ML systems and full-stack products. Transitioning fluidly between computer vision, LLM agents, and robust web backends. Grounded in real deployed systems.",
+    "photo": "assets/profile.jpg",
+    "location": "Delhi NCR, India (Open to Relocation)",
+    "email": "mm6826@srmist.edu.in",
+    "phone": "7906263004",
+    "resumeLink": "",
+    "links": {
+      "github": "https://github.com/misthi0",
+      "linkedin": "https://www.linkedin.com/in/misthi-maheshwari-5b9870322",
+      "portfolio": "https://misthiportfolio1.netlify.app/",
+      "leetcode": "https://leetcode.com/u/tanishamaheshwari05/"
+    }
+  },
+  "about": "I'm a B.Tech Computer Science (AI/ML) student at SRM Institute of Science and Technology, Chennai, currently at a 10 CGPA. Most of what I know, I picked up by shipping production systems end to end \u2014 a real-time warehouse dispatch platform at Aditya Birla Group, and a legal contract analyser at Infosys \u2014 with results ranging from 80-90% accuracy on real-world data.",
+  "skills": {
+    "Languages": [
+      "Python",
+      "Java",
+      "C++",
+      "SQL",
+      "JavaScript",
+      "HTML",
+      "CSS"
+    ],
+    "AI / ML": [
+      "Machine Learning",
+      "Deep Learning",
+      "NLP",
+      "Computer Vision",
+      "Generative AI",
+      "LLMs",
+      "RAG",
+      "DSA",
+      "Vector Databases (Pinecone)",
+      "spaCy"
+    ],
+    "Frameworks & Libraries": [
+      "TensorFlow",
+      "PyTorch",
+      "Scikit-learn",
+      "LangChain",
+      "LangGraph",
+      "OpenCV",
+      "Pandas",
+      "NumPy",
+      "Matplotlib",
+      "Flask",
+      "Spring Boot",
+      "Streamlit",
+      "Gradio",
+      "Tailwind CSS",
+      "PyPDF2",
+      "python-docx"
+    ],
+    "Tools & Platforms": [
+      "Git",
+      "GitHub",
+      "REST APIs",
+      "JWT",
+      "Postman",
+      "Jupyter Notebook",
+      "Grok API"
+    ],
+    "Databases": [
+      "MySQL",
+      "PostgreSQL",
+      "SQLite"
+    ]
+  },
+  "experience": [
+    {
+      "id": "exp1",
+      "company": "Aditya Birla Group",
+      "role": "SDE Intern",
+      "period": "Jun 2026 - Present",
+      "link": "",
+      "points": [
+        "Engineered a full-stack warehouse dispatch system (React.js, FastAPI, PostgreSQL) that evaluates stock across three warehouses and recommends the optimal one for order fulfilment.",
+        "Solved over-allocation during simultaneous VIP and normal orders by enforcing per-warehouse dispatch caps with priority-weighted logic, and calculating expected wait times from restock dates for out-of-stock items.",
+        "Implemented REST APIs with secure authentication and an admin dashboard displaying live inventory, dispatch limits, today's dispatched quantities, and pending/VIP order queues.",
+        "Built an AI-powered chatbot for customer order queries and automated PDF reports summarising each order's status, quantity, and assigned warehouse.",
+        "Developed a document-processing tool extracting data from Excel, Word, PDF, text, and image files, achieving ~80% accuracy on real company data."
+      ]
+    },
+    {
+      "id": "exp_google",
+      "company": "Google (associated with AICTE)",
+      "role": "AI/ML Intern",
+      "period": "Jan 2026 - Mar 2026",
+      "link": "",
+      "points": [
+        "Built end-to-end ML pipelines (Python, TensorFlow, Scikit-learn) covering model selection, training, hyperparameter tuning, and evaluation.",
+        "Used Pandas/NumPy preprocessing to handle missing values, outliers, and feature engineering.",
+        "Delivered reproducible AI applications on Colab/Jupyter, using Matplotlib-driven EDA."
+      ]
+    },
+    {
+      "id": "exp2",
+      "company": "Infosys",
+      "role": "AI/ML Intern \u2014 Clause AI",
+      "period": "Nov 2025 - Jan 2026",
+      "link": "",
+      "points": [
+        "Built Clause AI, a web platform where users register, log in, and upload legal or business contracts for automated analysis \u2014 extracting key clauses, obligations, risks, and non-standard terms in seconds.",
+        "Engineered the backend in Python using LangGraph and LangChain, with a PyPDF2/python-docx pipeline and Pinecone for semantic clause search \u2014 cutting review time by ~80%.",
+        "Delivered results in JSON and PDF formats with a history section, through a Streamlit interface."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "id": "edu1",
+      "school": "SRM Institute of Science and Technology, Chennai",
+      "degree": "B.Tech in Computer Science and Engineering (AI/ML)",
+      "period": "Aug 2024 - Jun 2028",
+      "detail": "CGPA: 10/10",
+      "link": ""
+    }
+  ],
+  "training": [],
+  "projects": [
+    {
+      "id": "proj1",
+      "title": "Kisaan Vaani \u2014 Agricultural Marketplace",
+      "badge": "SIH 2025",
+      "description": "Voice-first agricultural marketplace connecting farmers directly to buyers \u2014 Java Spring Boot RESTful APIs for crop listing, buyer contact, and live price updates. Escrow payment flow, JWT auth, multilingual voice input.",
+      "tags": [
+        "Java",
+        "Spring Boot",
+        "REST APIs",
+        "JWT",
+        "PostgreSQL"
+      ],
+      "link": "",
+      "github": ""
+    },
+    {
+      "id": "proj2",
+      "title": "Resume Parser and Job Matcher",
+      "badge": "2026",
+      "description": "NLP-based resume screening tool \u2014 spaCy NER extracts skills, education, experience from PDF/Word files at 90% accuracy, then ranks candidates via skill-overlap and keyword-relevance.",
+      "tags": [
+        "Python",
+        "spaCy",
+        "NLTK",
+        "scikit-learn",
+        "PyPDF2",
+        "pandas"
+      ],
+      "link": "",
+      "github": ""
+    },
+    {
+      "id": "proj3",
+      "title": "Order Updation Tool",
+      "badge": "2026",
+      "description": "Document automation tool built during the Aditya Birla Group internship \u2014 Grok API extracts text from PDFs, images, Excel, and Word files, standardising it into the company's Excel layout, ~80% accuracy.",
+      "tags": [
+        "React.js",
+        "Python",
+        "Grok API",
+        "Excel Automation",
+        "File Parsing"
+      ],
+      "link": "",
+      "github": ""
+    }
+  ],
+  "certifications": [
+    {
+      "id": "c1",
+      "title": "SnowPro Associate \u2014 Snowflake",
+      "link": ""
+    },
+    {
+      "id": "c2",
+      "title": "Responsible AI \u2014 Amazon Web Services (AWS)",
+      "link": ""
+    },
+    {
+      "id": "c3",
+      "title": "SOAR-AI Certification Program (NCVET Recognised) \u2014 HCL Technologies, Microsoft & NASSCOM",
+      "link": ""
+    },
+    {
+      "id": "c4",
+      "title": "Artificial Intelligence \u2014 IBM",
+      "link": ""
+    },
+    {
+      "id": "c5",
+      "title": "HackerRank Python & Java",
+      "link": ""
+    },
+    {
+      "id": "c6",
+      "title": "AI & ML Specialisation \u2014 Infosys",
+      "link": ""
+    },
+    {
+      "id": "c7",
+      "title": "Gemini Certified Educator \u2014 Google",
+      "link": ""
+    },
+    {
+      "id": "c8",
+      "title": "GitHub Copilot Fundamentals \u2014 Microsoft",
+      "link": ""
+    },
+    {
+      "id": "c9",
+      "title": "Software Engineering Job Simulation \u2014 JPMorgan Chase, Accenture, Walmart (Forage)",
+      "link": ""
+    }
+  ],
+  "extras": [
+    {
+      "id": "ex2",
+      "text": "Rising Star Award 2025 and Outstanding Academic Achievement Award 2025 \u2014 SRMIST",
+      "link": ""
+    },
+    {
+      "id": "ex3",
+      "text": "IIT Delhi Campus Ambassador and LOR from eDC IIT Delhi",
+      "link": ""
+    },
+    {
+      "id": "ex4",
+      "text": "Class Representative, SRM IST (2024\u201326) \u2014 elected for 2 consecutive years",
+      "link": ""
+    },
+    {
+      "id": "ex5",
+      "text": "Anchor & Event Coordinator for International Conference \"Viksit Bharat\", SRM IST",
+      "link": ""
+    }
+  ],
+  "customLinks": [
+    {
+      "id": "cl1",
+      "label": "Resume (PDF)",
+      "url": ""
+    }
+  ],
+  "languages": [
+    "English (Fluent)",
+    "Hindi (Native)",
+    "German (Basic)"
+  ],
+  "interests": [
+    "Dance",
+    "Reading science fiction",
+    "Exploring AI innovations",
+    "Competitive coding & problem solving"
+  ],
+  "publications": [
+    {
+      "id": "pub1",
+      "title": "From Tools to Companion: A Critical Review in Role of AI and Robotics as Sustainable Emerging Earthling Existence in 21st Century",
+      "status": "published",
+      "link": "https://zenodo.org/records/15768187"
+    },
+    {
+      "id": "pub2",
+      "title": "Kisan Vaani: A Voice-First Transaction Framework for Inclusive Agricultural Market Access",
+      "status": "in_progress",
+      "link": ""
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Misthi Maheshwari — AI/ML Engineer</title>
+<meta name="description" content="Portfolio of Misthi Maheshwari — AI/ML Engineer & Full-Stack Builder.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="splashScreen">
+  <div id="splashLetter">M</div>
+</div>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="logo">misthi<span class="dot">.</span>dev</div>
+    <div class="nav-links">
+      <a href="#about">about</a>
+      <a href="#experience">experience</a>
+      <a href="#projects">projects</a>
+      <a href="#education">education</a>
+      <a href="#certifications">certs</a>
+      <a href="#publications">publications</a>
+      <a href="#contact">contact</a>
+    </div>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark and light theme">
+      <svg id="themeIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg>
+    </button>
+  </div>
+</nav>
+
+<header class="hero container">
+  <div class="hero-grid">
+    <div class="reveal in">
+      <div class="hero-badge" id="heroBadge"></div>
+      <h1 class="hero-name" id="heroName">Loading<span>…</span></h1>
+      <p class="hero-sub" id="heroSub"></p>
+      <div class="contact-row" id="heroContactRow"></div>
+      <div class="bottom-meta" id="bottomMeta"></div>
+    </div>
+
+    <div class="hero-side reveal in">
+    <div class="photo-frame">
+      <img id="heroPhoto" src="assets/profile.jpg" alt="Portrait of Misthi Maheshwari">
+      <div class="location-tag" id="locationTag"></div>
+    </div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section class="section" id="about">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="section-title">About</h2>
+    </div>
+    <p class="about-text reveal" id="aboutText"></p>
+
+    <div class="stat-strip reveal" id="statStrip"></div>
+
+  </div>
+</section>
+
+<section class="section" id="skills">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="section-title">Skills</h2>
+    </div>
+    <div class="skills-grid reveal" id="skillsGrid"></div>
+  </div>
+</section>
+
+<section class="section" id="experience">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="section-title">Experience</h2>
+    </div>
+    <div class="timeline reveal" id="expTimeline"></div>
+  </div>
+</section>
+
+<section class="section" id="projects">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="section-title">Projects</h2>
+    </div>
+    <div class="projects-grid reveal" id="projectsGrid"></div>
+  </div>
+</section>
+
+<section class="section" id="certifications">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="section-title">Certifications</h2>
+    </div>
+    <div class="cert-grid reveal" id="certGrid"></div>
+  </div>
+</section>
+
+<section class="section" id="publications">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="section-title">Publications</h2>
+    </div>
+    <div class="publications-grid reveal" id="publicationsGrid"></div>
+  </div>
+</section>
+
+<section class="section" id="extras">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="section-title">Beyond the code</h2>
+    </div>
+    <ul class="extras-list reveal" id="extrasList"></ul>
+    <div style="margin-top:28px;" class="reveal">
+      <div class="eyebrow">languages &amp; interests</div>
+      <div class="chips-row" id="langChips"></div>
+      <div class="chips-row" id="interestChips" style="margin-top:10px;"></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="contact" style="border-bottom:none;">
+  <div class="container contact-inner">
+    <div class="eyebrow" style="justify-content:center;"></div>
+    <h2 class="contact-title">Let's build something.</h2>
+    <p class="muted">Open to SDE, AI/ML and full-stack roles — Delhi NCR or remote.</p>
+    <div class="contact-links" id="contactLinks"></div>
+  </div>
+</section>
+
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="container">
+    © <span id="year"></span> Misthi Maheshwari · Built with intent · <a href="admin.html">admin</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+.admin-card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  padding:26px;
+}
+.admin-input, .admin-textarea{
+  width:100%;
+  background:var(--surface-2);
+  border:1px solid var(--border);
+  color:var(--text);
+  border-radius:8px;
+  padding:10px 12px;
+  font-family:var(--font-body);
+  font-size:.92rem;
+}
+.admin-textarea{ min-height:70px; resize:vertical; font-family:var(--font-mono); font-size:.82rem; }
+.admin-field{ margin-bottom:14px; }
+.admin-field label{
+  display:block; font-family:var(--font-mono); font-size:.72rem; color:var(--muted);
+  margin-bottom:6px; text-transform:lowercase;
+}
+.admin-row{ display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+.admin-toolbar{
+  display:flex; justify-content:space-between; align-items:flex-start; gap:20px;
+  flex-wrap:wrap; margin-bottom:8px; padding-bottom:24px; border-bottom:1px solid var(--border);
+}
+.admin-toolbar-actions{ display:flex; gap:10px; flex-wrap:wrap; }
+.save-status{
+  font-family:var(--font-mono); font-size:.78rem; color:var(--accent);
+  height:20px; margin:14px 0;
+}
+.admin-tabs{
+  display:flex; gap:8px; flex-wrap:wrap; margin:24px 0 20px; position:sticky; top:70px; z-index:10;
+  background:var(--bg); padding:10px 0;
+}
+.admin-tab{
+  font-family:var(--font-mono); font-size:.8rem; padding:8px 16px;
+  border-radius:99px; border:1px solid var(--border); background:var(--surface);
+  cursor:pointer; color:var(--muted);
+}
+.admin-tab.active{ background:var(--accent); color:#06110E; border-color:var(--accent); font-weight:600; }
+.admin-panel{ display:none; flex-direction:column; gap:16px; }
+.admin-panel.active{ display:flex; }
+.item-card{
+  background:var(--surface); border:1px solid var(--border); border-radius:var(--radius);
+  padding:20px; position:relative;
+}
+.item-card-head{ display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; }
+.item-title{ font-family:var(--font-mono); font-size:.78rem; color:var(--accent2); }
+.item-remove{
+  background:transparent; border:1px solid var(--border); color:var(--danger);
+  border-radius:6px; padding:5px 10px; font-family:var(--font-mono); font-size:.72rem; cursor:pointer;
+}
+.item-remove:hover{ background:var(--danger); color:#fff; border-color:var(--danger); }
+.add-item-btn{
+  align-self:flex-start;
+  background:var(--surface-2); border:1px dashed var(--border); color:var(--accent);
+  border-radius:8px; padding:10px 16px; font-family:var(--font-mono); font-size:.82rem; cursor:pointer;
+}
+.add-item-btn:hover{ border-color:var(--accent); }
+.taglist-hint{ font-size:.74rem; color:var(--muted); margin-top:4px; }
